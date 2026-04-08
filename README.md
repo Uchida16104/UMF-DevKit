@@ -105,7 +105,7 @@ UMF-DevKit/
 ## Quick Start
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/UMF-DevKit.git
+git clone https://github.com/Uchida16104/UMF-DevKit.git
 cd UMF-DevKit
 docker compose up --build
 ```
