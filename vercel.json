@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "frontend/vue/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "https://your-render-service.onrender.com/api/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/frontend/vue/dist/$1"
+    }
+  ],
+  "env": {
+    "VITE_API_BASE_URL": "https://your-render-service.onrender.com"
+  },
+  "buildCommand": "cd frontend/vue && npm install && npm run build",
+  "outputDirectory": "frontend/vue/dist",
+  "framework": "vite"
+}
