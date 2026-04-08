@@ -27,15 +27,15 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    A([Start: arr, target]) --> B[lo = 0\nhi = len - 1]
+    A([Start: arr, target]) --> B["lo = 0<br/>hi = len - 1"]
     B --> LOOP{lo <= hi?}
     LOOP -- No --> NOTFOUND([Return -1])
-    LOOP -- Yes --> C[mid = lo + hi / 2]
-    C --> D{arr[mid]\n== target?}
+    LOOP -- Yes --> C["mid = floor((lo + hi) / 2)"]
+    C --> D{"arr[mid] == target?"}
     D -- Yes --> FOUND([Return mid])
-    D -- No --> E{arr[mid]\n< target?}
-    E -- Yes --> F[lo = mid + 1]
-    E -- No --> G[hi = mid - 1]
+    D -- No --> E{"arr[mid] < target?"}
+    E -- Yes --> F["lo = mid + 1"]
+    E -- No --> G["hi = mid - 1"]
     F --> LOOP
     G --> LOOP
 
