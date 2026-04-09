@@ -16,13 +16,13 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/frontend/vue/dist/$1"
+      "dest": "index.html"
     }
   ],
   "env": {
     "VITE_API_BASE_URL": "https://your-render-service.onrender.com"
   },
   "buildCommand": "npm install && npm run build",
-  "outputDirectory": "frontend/vue/dist",
+  "outputDirectory": "dist",
   "framework": "vite"
 }
