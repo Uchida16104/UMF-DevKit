@@ -17,4 +17,4 @@ RUN if [ -f composer.json ]; then composer install --no-dev --optimize-autoloade
 
 EXPOSE 8000
 
-CMD ["php", "-S", "0.0.0.0:8000", "-t", "public"]
+CMD ["php", "-S", "0.0.0.0:8000", "-t", "."]
