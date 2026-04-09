@@ -1,4 +1,4 @@
-FROM rust:1.85-slim-bookworm AS builder
+FROM rust:1.88-slim-bookworm AS builder
 
 RUN apt-get update && apt-get install -y \
     pkg-config \
@@ -10,11 +10,11 @@ WORKDIR /app
 
 COPY Cargo.toml ./
 RUN mkdir src && echo 'fn main(){}' > src/main.rs
-RUN cargo build --release
+RUN cargo build --release --locked
 RUN rm -f target/release/deps/umf_actix*
 
 COPY src ./src
-RUN cargo build --release
+RUN cargo build --release --locked
 
 FROM debian:bookworm-slim
 
