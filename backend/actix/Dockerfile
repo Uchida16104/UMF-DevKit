@@ -10,11 +10,11 @@ WORKDIR /app
 
 COPY Cargo.toml ./
 RUN mkdir src && echo 'fn main(){}' > src/main.rs
-RUN cargo build --release --locked
+RUN cargo build --release
 RUN rm -f target/release/deps/umf_actix*
 
 COPY src ./src
-RUN cargo build --release --locked
+RUN cargo build --release
 
 FROM debian:bookworm-slim
 
