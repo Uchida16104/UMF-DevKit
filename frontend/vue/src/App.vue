@@ -63,7 +63,7 @@ async function fetchHello() {
   loading.value = true;
   error.value = "";
   try {
-    const res = await fetch("http://localhost:8004/hello");
+    const res = await fetch("https://umf-devkit-fastapi.onrender.com:8004/hello");
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
     apiResponse.value = JSON.stringify(data, null, 2);
