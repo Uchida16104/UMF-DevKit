@@ -1,0 +1,59 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Node / Vite
+node_modules/
+dist/
+coverage/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Laravel / PHP
+vendor/
+storage/*.key
+storage/logs/
+storage/framework/cache/
+storage/framework/sessions/
+storage/framework/views/
+bootstrap/cache/*.php
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# Rust
+target/
+
+# .NET
+bin/
+obj/
+
+# Java
+*.class
+build/
+out/
+
+# Zig
+zig-cache/
+zig-out/
+
+# Misc
+*.sqlite
+*.db
+*.log
