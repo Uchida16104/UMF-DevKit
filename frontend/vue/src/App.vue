@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen bg-gray-950 text-gray-100 font-mono">
     <header class="border-b border-gray-800 px-8 py-6">
-      <h1 class="text-3xl font-bold text-indigo-400">UMF-DevKit</h1>
+      <h1 class="text-3xl font-bold text-indigo-400">LaraVue</h1>
       <p class="text-gray-400 mt-1">Vue.js 3 + Tailwind CSS Frontend</p>
     </header>
 
@@ -44,7 +44,7 @@
 
       <section>
         <h2 class="text-xl font-semibold text-indigo-300 mb-4">Component Demo</h2>
-        <HelloWorld message="Hello from UMF-DevKit!" />
+        <HelloWorld message="Hello from LaraVue!" />
       </section>
     </main>
   </div>
