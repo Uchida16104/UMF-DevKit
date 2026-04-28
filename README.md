@@ -1,4 +1,4 @@
-# LaraVue — Unified Multi-Framework Developer Kit
+# LaraVue (formerly: UMF-DevKit) — Unified Multi-Framework Developer Kit
 
 A production-ready GitHub template repository providing a polyglot, mono-repo scaffold that combines every major frontend, backend, verification, creative, and infrastructure technology into a single cloneable starting point.
 
